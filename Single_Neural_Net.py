@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from numpy import random as r
 
-class uwu:
+class neurons:
     def __init__(self):
         r.seed(1)
         self.weights = initialweight = 2*r.random((1,1)) - 1
@@ -29,7 +29,7 @@ x = np.asarray([x])/100
 y = np.asarray([y])/100
 plt.plot(data,"b.")
 plt.show()
-neuron = uwu()
+neuron = neurons()
 x = x.reshape(300,1)
 y = y.T
 neuron.train(10000,x,y)
